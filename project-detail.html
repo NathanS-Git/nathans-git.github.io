@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Nathan Smith</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="projects-style.css"/>
+</head>
+<body>
+    <div class="project-detail-page">
+        <nav class="nav-header">
+            <a href="projects.html">← Back to Projects</a>
+            <a href="index.html">Home</a>
+        </nav>
+
+        <div class="project-detail-container">
+            <div class="project-header">
+                <h1 class="project-name">Project Title</h1>
+                <p class="project-subtitle">A brief tagline about the project</p>
+            </div>
+
+            <div class="project-showcase">
+                <div class="zoom" onmouseleave="reset(this.children[0])">
+                    <div class="showcase-content" onmousemove="turnToMouse(this, event)" onmouseenter="mouseEnter()" onmouseleave="mouseLeave(this)">
+                        <img class="showcase-image" src="assets/Profile_transparent.png" alt="Project showcase"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <section class="detail-section">
+                    <h2>About</h2>
+                    <p>This is where you describe your project in detail. Explain the problem it solves, the technologies used, and the impact it had.</p>
+                </section>
+
+                <section class="detail-section">
+                    <h2>Technologies</h2>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </section>
+
+                <section class="detail-section">
+                    <h2>Features</h2>
+                    <ul class="features-list">
+                        <li>Feature one: Description of what this does</li>
+                        <li>Feature two: Description of what this does</li>
+                        <li>Feature three: Description of what this does</li>
+                    </ul>
+                </section>
+
+                <section class="detail-section">
+                    <h2>Links</h2>
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank">View Live Demo</a>
+                        <a href="#" class="project-link" target="_blank">GitHub Repository</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="projects-footer">
+            <p>This website has been built, designed, and maintained by Nathan Smith</p>
+        </footer>
+    </div>
+
+    <script src="js/projects.js"></script>
+</body>
+</html>

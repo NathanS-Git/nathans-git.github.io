@@ -1,4 +1,3 @@
-// This section is in charge of manipulating which song is currently selected to play
 
 var previousSong;
 var songList = JSON.parse(sessionStorage.getItem("playlist"));
@@ -146,17 +145,3 @@ function getAverageRGB(imgEl) {
 
     return rgb
 }
-
-
-function addToPlaylist(element) {
-    try {
-        songList = JSON.parse(sessionStorage.getItem("playlist"));
-        songList.push(element.id);
-    } catch (TypeError) {
-        songList = [];
-        songList.push(element.id);
-    }
-    sessionStorage.clear()
-    sessionStorage.setItem("playlist", JSON.stringify(songList))
-}
-
